@@ -11,11 +11,7 @@ app.use(
   })
 )
 
-app.get("/", (req, response) => {
-    response.json({ info: 'Node.js, Express, and Postgres API' })
-});
-
-app.get('/links', service.getCount)
+app.get('/', service.getCount)
 
 app.listen(port, () => {
   console.log(`Sribu app listening on port ${port}`);
