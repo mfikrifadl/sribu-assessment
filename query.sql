@@ -5,7 +5,7 @@
 		url VARCHAR(255) NOT NULL,
 		name VARCHAR(255) NOT NULL,
 		description VARCHAR (255),
-		type VARCHAR (100),
+		type VARCHAR (100) NOT NULL,
 		last_update DATE DEFAULT CURRENT_TIMESTAMP NOT NULL
 	);
 
